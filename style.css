@@ -1,0 +1,287 @@
+body{
+    margin: 0;
+}
+#head{
+    background-color: #A0E9FF;
+    padding-left: 100px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4%;
+}
+.picture{
+    height: 100vh;
+}
+.title{
+    flex-basis: 500px;
+}
+
+h1{
+    color:#00A9FF;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 5vh;
+}
+.name{
+    color: #22668D;
+}
+.title-paragraph{
+    color: #22668D;
+    width: 450px;
+    font-size: 3vh;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.button{
+    background-color: #22668D;
+    padding: 12px;
+    border: 0;
+    border-radius: 6px;
+}
+.about{
+    color: white;
+    font-weight: 300;
+    font-size: 3vh;
+    text-decoration: none;
+}
+.breifcase{
+    position: relative;
+    top: 2px;
+}
+
+/* Section Two */
+#section-two{
+    background-color: #CDF5FD;
+    height: 70vh;
+    padding-top: 5vh;
+}
+
+.info{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 5%
+}
+.display{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+h2{
+    color:#00A9FF;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 3vh;
+}
+
+.details{
+    color: #22668D;
+    font-size: 3vh;
+    text-align: left;
+}
+
+/* Section 3 */
+#section-three{
+    background-color: #CDF5FD;
+    padding-top: 10vh;
+}
+.contact{
+    text-align: center;
+}
+h3{
+    color: #00A9FF;
+    padding: 0;
+    font-size: 4vh;
+}
+h4{
+    color: #0174BE;
+    padding: 0;
+    font-size: 3vh;
+}
+.can{
+    color:#22668D;
+    padding: 0;
+    font-size: 2.8vh;
+}
+
+/* Footer Section */
+#footer{
+    background-color: #A0E9FF;
+    height: 20vh;
+    padding-top: 8vh;
+    text-align: center;
+}
+
+.link{
+    display: inline-flex;
+    gap: 20vh;
+    font-size: 3vh;
+}
+.footer-link{
+    color: #22668D;
+    text-decoration: none;
+}
+.copyright{
+    color: #00A9FF;
+    font-size: 4vh;
+}
+
+@media (max-width: 1245px){
+    #head{
+        padding-left: 40px;
+        height: 70vh;
+    }
+    .hero{
+        gap: 2vh;
+        margin-top: 10vh;
+    }
+    .picture{
+        height: 35vh;
+        border: 5px solid #22668D;
+    }
+    .title{
+        width: 25vh;
+        margin-right: 40vh;
+    }
+    #section-two{
+        padding-top: 1vh;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 9vh;
+    }
+    .three{
+        grid-column: span 2;
+        width: 35vh;
+    }
+    #section-three{
+        padding-top: 50vh;
+    }
+}
+
+@media  (max-width: 861px){
+
+    #head{
+        padding-left: 2vh;
+        justify-content: flex-start;
+        height: 60vh;
+    }
+    .hero{
+        gap: 0;
+        flex-basis: 10vh;
+    }
+    .profile{
+        position: relative;
+        top: 4vh;
+    }
+    .picture{
+        height: 25vh;
+        border: 5px solid #22668D;
+        margin-right: 10vh;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .three{
+        width: auto;
+    }
+    
+    #section-three{
+        padding-top: 100vh;
+    }
+    h4{
+        width: 55vh;
+        margin-left: 5vh;
+    }
+    .can{
+        width: 55vh;
+        margin-left: 5vh;
+    }
+   
+   
+   
+}
+@media  (max-width: 600px){
+    #head{
+        padding-left: 6vh;
+        justify-content: flex-start;
+        height: 90vh;
+    }
+    .title{
+        flex-basis: 40vh;
+        width: 30vh;
+    }
+    .title-paragraph{
+        width: 30vh;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 70vh;
+    }
+    .picture{
+        border: 5px solid #22668D;
+        margin-right: 55vh;
+    }
+    #section-three{
+        padding-top: 140vh;
+    }
+    h4{
+        width: 35vh;
+        text-align: left;
+        margin-left: 2vh;
+    }
+    .can{
+        width: 35vh;
+        text-align: left;
+        padding-bottom: 6vh;
+        margin-left: 2vh;
+    }
+}
+@media  (max-width: 360px){
+    .title{
+        width: 30vh;
+        margin-left: 40vh;
+    }
+    .hero{
+        width: 40vh;
+        justify-content: center;
+        align-items: center;
+    }
+   .profile{
+    width: 20vh;
+   }
+    #head{
+        height: 95vh;
+    }
+    #section-three{
+        padding-top: 150vh;
+    }
+    h4{
+        width: 25vh;
+    }
+    .can{
+        width: 25vh;
+    }
+}
+
+
+
+
